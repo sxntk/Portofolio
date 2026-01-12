@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio SHANTIKA - Mahasiswa Teknik Informatika dengan keahlian di Web Development, Data Science, dan Desain">
+    <title>SHANTIKA | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">SHANTIKA</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Beranda</a></li>
+                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#skills" class="nav-link">Keahlian</a></li>
+                <li><a href="#experience" class="nav-link">Pengalaman</a></li>
+                <li><a href="#education" class="nav-link">Pendidikan</a></li>
+                <li><a href="#certifications" class="nav-link">Sertifikasi</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-greeting">Halo, Saya</span>
+                <h1 class="hero-title">
+                    <span class="name-highlight">SHANTIKA</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </p>
+                <p class="hero-description">
+                    Mahasiswa Teknik Informatika dengan minat kuat pada pengembangan sistem dan aplikasi berbasis web. 
+                    Berkeinginan untuk berkarir sebagai Web Developer, Junior Data Scientist, atau di bidang Manajemen Risiko.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Hubungi Saya</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#experience" class="btn btn-secondary">
+                        <span>Lihat Portfolio</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-glow"></div>
+                    <div class="profile-avatar">
+                        <div class="avatar-placeholder">
+                            <span>S</span>
+                        </div>
+                    </div>
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-label">Pengalaman</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="5">0</span>
+                            <span class="stat-label">Sertifikat</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="1">0</span>
+                            <span class="stat-label">Publikasi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Tentang Saya</span>
+                <h2 class="section-title">Mengenal Lebih Dekat</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3>Profil</h3>
+                    <p>Mahasiswa Teknik Informatika di Universitas Muslim Indonesia dengan minat kuat pada pengembangan sistem dan aplikasi berbasis web.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20l9-5-9-5-9 5 9 5z"></path>
+                            <path d="M12 12l9-5-9-5-9 5 9 5z"></path>
+                        </svg>
+                    </div>
+                    <h3>Pengalaman</h3>
+                    <p>Memiliki pengalaman dalam pembuatan website untuk UMKM (Bengkel Tho'Bone) dan magang di PT. Angkasa Pura I Makassar.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                        </svg>
+                    </div>
+                    <h3>Publikasi</h3>
+                    <p>Telah mempublikasikan artikel ilmiah di Jurnal Nasional Terakreditasi (Sinta 3) mengenai sistem stok barang.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Sertifikasi</h3>
+                    <p>Memiliki kompetensi dasar dalam Data Mining dan AI yang tervalidasi sertifikat BNSP.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kemampuan</span>
+                <h2 class="section-title">Keahlian Saya</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">💻</span>
+                        Hard Skills
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Web Development</span>
+                                <span class="skill-level">Competent</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Data Science</span>
+                                <span class="skill-level">Advance</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Desain</span>
+                                <span class="skill-level">Advance</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Microsoft Office</span>
+                                <span class="skill-level">Competent</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Manajemen Risiko</span>
+                                <span class="skill-level">Competent</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">🤝</span>
+                        Soft Skills
+                    </h3>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-card">
+                            <span class="soft-skill-icon">👥</span>
+                            <span class="soft-skill-name">Kerja Tim</span>
+                        </div>
+                        <div class="soft-skill-card">
+                            <span class="soft-skill-icon">✅</span>
+                            <span class="soft-skill-name">Tanggung Jawab</span>
+                        </div>
+                        <div class="soft-skill-card">
+                            <span class="soft-skill-icon">⏰</span>
+                            <span class="soft-skill-name">Disiplin</span>
+                        </div>
+                        <div class="soft-skill-card">
+                            <span class="soft-skill-icon">🔄</span>
+                            <span class="soft-skill-name">Adaptasi</span>
+                        </div>
+                        <div class="soft-skill-card">
+                            <span class="soft-skill-icon">👁️</span>
+                            <span class="soft-skill-name">Perhatian Detail</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">🌐</span>
+                        Bahasa
+                    </h3>
+                    <div class="language-grid">
+                        <div class="language-card">
+                            <span class="language-flag">🇮🇩</span>
+                            <span class="language-name">Indonesia</span>
+                            <span class="language-level expert">Expert</span>
+                        </div>
+                        <div class="language-card">
+                            <span class="language-flag">🇬🇧</span>
+                            <span class="language-name">English</span>
+                            <span class="language-level advance">Advance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Karir</span>
+                <h2 class="section-title">Pengalaman Kerja</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Calon Asisten Lab Fikom</h3>
+                            <span class="timeline-company">Universitas Muslim Indonesia Makassar</span>
+                        </div>
+                        <span class="timeline-date">Desember 2023 – Juli 2024</span>
+                        <ul class="timeline-description">
+                            <li>Membantu persiapan praktikum</li>
+                            <li>Memberikan asistensi kepada 30-50 mahasiswa per kelas</li>
+                            <li>Melakukan rekapitulasi tugas mahasiswa</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Magang</h3>
+                            <span class="timeline-company">PT. Angkasa Pura I Makassar</span>
+                        </div>
+                        <span class="timeline-date">2024</span>
+                        <ul class="timeline-description">
+                            <li>Berkolaborasi dalam tim (7 anggota)</li>
+                            <li>Membuat proyek Traffic Light yang terintegrasi dengan website</li>
+                            <li>Mengembangkan sistem berbasis web</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Jaga Toko</h3>
+                            <span class="timeline-company">Retail</span>
+                        </div>
+                        <span class="timeline-date">Pengalaman Sebelumnya</span>
+                        <ul class="timeline-description">
+                            <li>Mengelola 80-150 transaksi harian</li>
+                            <li>Manajemen stok 90 jenis barang</li>
+                            <li>Pencatatan penjualan secara sistematis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="organization-section">
+                <h3 class="subsection-title">Pengalaman Organisasi</h3>
+                <div class="org-card">
+                    <div class="org-logo">
+                        <span>GDSC</span>
+                    </div>
+                    <div class="org-info">
+                        <h4>Anggota GDSC UMI</h4>
+                        <p>Google Developer Student Clubs - Study Club</p>
+                        <span class="org-date">Januari 2023 – Mei 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Akademik</span>
+                <h2 class="section-title">Pendidikan</h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="edu-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                    </div>
+                    <div class="edu-content">
+                        <span class="edu-year">2022 - Sekarang</span>
+                        <h3>S1 Teknik Informatika</h3>
+                        <p class="edu-institution">Universitas Muslim Indonesia</p>
+                        <p class="edu-location">Makassar, Sulawesi Selatan</p>
+                    </div>
+                    <div class="edu-badge current">Sedang Berlangsung</div>
+                </div>
+                <div class="education-card">
+                    <div class="edu-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="edu-content">
+                        <span class="edu-year">2019 - 2022</span>
+                        <h3>MIPA</h3>
+                        <p class="edu-institution">SMA Negeri 4 Mangoli Utara</p>
+                        <p class="edu-score">Rata-rata Rapor: 87,69</p>
+                    </div>
+                    <div class="edu-badge completed">Selesai</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pencapaian</span>
+                <h2 class="section-title">Sertifikasi & Pelatihan</h2>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon bnsp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                    </div>
+                    <h4>Sertifikasi BNSP</h4>
+                    <p>Data Mining & Artificial Intelligence</p>
+                    <span class="cert-type">Sertifikasi Nasional</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon toefl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"></path>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h4>TOEFL Certificate</h4>
+                    <p>Bahasa Inggris</p>
+                    <span class="cert-type">Valid 2025 - 2027</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon magang">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <h4>Sertifikat Magang</h4>
+                    <p>PT. Angkasa Pura I Makassar</p>
+                    <span class="cert-type">Pengalaman Industri</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon komputer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h4>Kursus Komputer</h4>
+                    <p>Sertifikat Kompetensi Dasar</p>
+                    <span class="cert-type">Pelatihan Profesional</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon webinar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                        </svg>
+                    </div>
+                    <h4>Webinar Desain Grafis</h4>
+                    <p>& Seminar Nasional Teknologi Pendidikan</p>
+                    <span class="cert-type">Pengembangan Diri</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Hubungi</span>
+                <h2 class="section-title">Mari Terhubung</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-intro">Tertarik untuk bekerja sama atau memiliki pertanyaan? Jangan ragu untuk menghubungi saya!</p>
+                    <div class="contact-cards">
+                        <a href="mailto:shantika0395@gmail.com" class="contact-card">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">shantika0395@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+6281344258742" class="contact-card">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Telepon</span>
+                                <span class="contact-value">+62 813-4425-8742</span>
+                            </div>
+                        </a>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Lokasi</span>
+                                <span class="contact-value">Makassar, Sulawesi Selatan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Nama Lengkap</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Alamat Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                            <label for="message">Pesan Anda</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Kirim Pesan</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">SHANTIKA</span>
+                    <p>Mahasiswa Teknik Informatika dengan passion di Web Development & Data Science</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#skills">Keahlian</a></li>
+                        <li><a href="#experience">Pengalaman</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SHANTIKA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
