@@ -8,19 +8,19 @@
     --bg-tertiary: #1a1a25;
     --bg-card: rgba(26, 26, 37, 0.8);
     --bg-card-hover: rgba(35, 35, 50, 0.9);
-    
+
     /* Accent Colors */
     --accent-primary: #7c3aed;
     --accent-secondary: #a855f7;
     --accent-tertiary: #c084fc;
     --accent-gradient: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #06b6d4 100%);
     --accent-gradient-hover: linear-gradient(135deg, #8b5cf6 0%, #c084fc 50%, #22d3ee 100%);
-    
+
     /* Text Colors */
     --text-primary: #f8fafc;
     --text-secondary: #cbd5e1;
     --text-muted: #64748b;
-    
+
     /* Border & Shadow */
     --border-color: rgba(255, 255, 255, 0.08);
     --border-glow: rgba(124, 58, 237, 0.3);
@@ -28,15 +28,15 @@
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
     --shadow-glow: 0 0 40px rgba(124, 58, 237, 0.3);
-    
+
     /* Typography */
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    
+
     /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
-    
+
     /* Spacing */
     --container-max: 1200px;
     --section-padding: 100px;
@@ -250,7 +250,7 @@ img {
 .hero-gradient {
     position: absolute;
     inset: 0;
-    background: 
+    background:
         radial-gradient(circle at 20% 50%, rgba(124, 58, 237, 0.15) 0%, transparent 50%),
         radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.1) 0%, transparent 40%),
         radial-gradient(circle at 40% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 40%);
@@ -259,19 +259,26 @@ img {
 .hero-particles {
     position: absolute;
     inset: 0;
-    background-image: 
-        radial-gradient(2px 2px at 100px 50px, rgba(255,255,255,0.3), transparent),
-        radial-gradient(2px 2px at 400px 150px, rgba(255,255,255,0.2), transparent),
-        radial-gradient(1px 1px at 200px 300px, rgba(255,255,255,0.3), transparent),
-        radial-gradient(2px 2px at 600px 400px, rgba(255,255,255,0.2), transparent),
-        radial-gradient(1px 1px at 800px 200px, rgba(255,255,255,0.3), transparent),
-        radial-gradient(2px 2px at 300px 450px, rgba(255,255,255,0.2), transparent);
+    background-image:
+        radial-gradient(2px 2px at 100px 50px, rgba(255, 255, 255, 0.3), transparent),
+        radial-gradient(2px 2px at 400px 150px, rgba(255, 255, 255, 0.2), transparent),
+        radial-gradient(1px 1px at 200px 300px, rgba(255, 255, 255, 0.3), transparent),
+        radial-gradient(2px 2px at 600px 400px, rgba(255, 255, 255, 0.2), transparent),
+        radial-gradient(1px 1px at 800px 200px, rgba(255, 255, 255, 0.3), transparent),
+        radial-gradient(2px 2px at 300px 450px, rgba(255, 255, 255, 0.2), transparent);
     animation: particles 20s linear infinite;
 }
 
 @keyframes particles {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
 }
 
 .hero-content {
@@ -324,8 +331,15 @@ img {
 }
 
 @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
 
 .hero-description {
@@ -411,7 +425,9 @@ img {
 }
 
 @keyframes rotate {
-    100% { transform: rotate(360deg); }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .profile-avatar {
@@ -477,8 +493,15 @@ img {
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(10px); }
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(10px);
+    }
 }
 
 /* ==================== */
@@ -999,6 +1022,60 @@ img {
     font-weight: 500;
 }
 
+/* Profile Photo */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--shadow-glow);
+    border: 4px solid rgba(124, 58, 237, 0.5);
+    transition: var(--transition-normal);
+}
+
+.profile-avatar:hover .profile-photo {
+    transform: scale(1.05);
+    box-shadow: 0 0 60px rgba(124, 58, 237, 0.5);
+}
+
+/* Clickable Certification Card */
+.cert-card-link {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.cert-card-link:hover {
+    border-color: #f59e0b;
+    box-shadow: 0 0 30px rgba(245, 158, 11, 0.3);
+}
+
+.cert-view {
+    display: block;
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: #f59e0b;
+    font-weight: 600;
+    opacity: 0.8;
+    transition: var(--transition-normal);
+}
+
+.cert-card-link:hover .cert-view {
+    opacity: 1;
+}
+
+/* WhatsApp Contact Icon */
+.whatsapp-icon {
+    background: linear-gradient(135deg, #25D366, #128C7E) !important;
+}
+
+.whatsapp-icon svg {
+    fill: white;
+}
+
 /* ==================== */
 /* Contact Section */
 /* ==================== */
@@ -1113,15 +1190,15 @@ img {
     padding: 0 8px;
 }
 
-.form-group textarea ~ label {
+.form-group textarea~label {
     top: 20px;
     transform: none;
 }
 
-.form-group input:focus ~ label,
-.form-group input:not(:placeholder-shown) ~ label,
-.form-group textarea:focus ~ label,
-.form-group textarea:not(:placeholder-shown) ~ label {
+.form-group input:focus~label,
+.form-group input:not(:placeholder-shown)~label,
+.form-group textarea:focus~label,
+.form-group textarea:not(:placeholder-shown)~label {
     top: 0;
     font-size: 0.85rem;
     color: var(--accent-tertiary);
@@ -1200,20 +1277,20 @@ img {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    
+
     .hero-buttons {
         justify-content: center;
     }
-    
+
     .contact-content {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    
+
     .footer-brand p {
         max-width: 100%;
     }
@@ -1224,11 +1301,11 @@ img {
         --section-padding: 60px;
         --nav-height: 70px;
     }
-    
+
     .nav-toggle {
         display: flex;
     }
-    
+
     .nav-menu {
         position: fixed;
         top: var(--nav-height);
@@ -1245,37 +1322,37 @@ img {
         transition: var(--transition-normal);
         border-bottom: 1px solid var(--border-color);
     }
-    
+
     .nav-menu.active {
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
     }
-    
+
     .nav-link {
         width: 100%;
         text-align: center;
         padding: 14px;
     }
-    
+
     .profile-stats {
         gap: 20px;
     }
-    
+
     .stat-number {
         font-size: 1.5rem;
     }
-    
+
     .timeline {
         padding-left: 30px;
     }
-    
+
     .timeline-marker {
         left: -30px;
         width: 14px;
         height: 14px;
     }
-    
+
     .org-card {
         flex-direction: column;
         text-align: center;
@@ -1286,30 +1363,30 @@ img {
     .section-title {
         font-size: 1.75rem;
     }
-    
+
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.2rem;
     }
-    
+
     .btn {
         width: 100%;
         justify-content: center;
     }
-    
+
     .profile-card {
         padding: 24px;
     }
-    
+
     .avatar-placeholder {
         width: 120px;
         height: 120px;
         font-size: 3rem;
     }
-    
+
     .contact-form-container {
         padding: 24px;
     }
